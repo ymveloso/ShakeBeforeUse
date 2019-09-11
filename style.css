@@ -1,0 +1,237 @@
+
+/*
+Theme Name: 4joana
+Author: Yara Veloso
+Author URI: https://yaraveloso.nu
+Description: Custom theme
+Version: 1.0
+*/
+
+ * {
+    box-sizing: border-box;
+}
+
+@font-face{ 
+  font-family: 'deutsch'; 
+  src: url('deutsch.woff2');
+
+}
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: "arial narrow",helvetica, arial, 'sans-serif';
+  font-size: 22px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+/*  animation-name: bg;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;*/
+}
+
+@keyframes bg {
+    0% {background-color: #f2f2f2;}
+    20% {background-color: #35cdab;}
+    40% {background-color: #f2f2f2;}
+    60% {background-color:  #b83579;}
+    80% {background-color: #f2f2f2;}
+    100% {background-color: #35cdab;}
+
+  }
+
+/* 33%:3  100%:1 */
+.header {
+  position: relative;
+  /* position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky; */
+  top: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  max-width: 55%;
+
+
+}
+
+.column {
+    float: none;
+    width: 55%;
+    margin: auto;
+    min-height: 40vh;
+    /*overflow: auto;*/
+    overflow:visible;
+    
+}
+
+.column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin: auto;
+  padding: 10px;
+  min-height: 30vh;
+  max-height: 45vh;
+  overflow: auto;
+}
+
+/* links */
+a:link, a:visited, a:active {
+    color: purple;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a:hover {
+color: blue;
+}
+
+#infoi {position: absolute; left: 10px; top: 10px; font-size: 40px; text-align: center;}
+
+#emailfix {position: fixed; right: 10px; bottom: 10px; font-size: 40px; text-align: center;}
+
+
+
+/* text formatting */
+
+.column p {
+  clear: both;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+h2, h1 {
+  text-align: center;
+  padding:0; 
+  margin:0;
+  padding-top: 3px;
+}
+
+h3 {
+font-style: italic;
+}
+
+h1, h1 a:link, h1 a:active, h1 a:visited {
+  font-size: 90px;
+  font-family: "deutsch";
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+  /*text-shadow: 0px 0px 25px #00e6b8;*/
+}
+
+h1 a:hover {
+    text-shadow: 0px 0px 25px purple;
+}
+
+h2, h2 a:link, h2 a:active, h2 a:visited {
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+    font-family: arial;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+h2 a:hover {
+  color: purple;
+}
+
+.footer h2 {
+  text-align: left;
+  font-family: "deutsch";
+  border: none;
+  color: #000;
+  font-size: 40px;
+  text-shadow: none;
+  -webkit-margin-after: 0;
+  position: sticky;
+  top: 0;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0.86em;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.links {
+  text-align: center;
+}
+
+
+/* theme specific*/
+.thumbnail img {
+  outline: 5px solid black;
+  box-shadow: 0 4px 20px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+  box-sizing: border-box ;
+}
+
+.wp-caption-text {
+  font-size: 14px;
+}
+
+.thumbnail img:hover {
+  filter: invert(10);
+ /*opacity: 0.8;*/
+}
+
+.widget li {
+  list-style: none;
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; margin: 0 0 1em 1em;}
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.back {
+ clear: both;
+}
+
+
+/* mobile devices */
+@media (max-width:800px) {
+    .column {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer {
+        width: 100%;
+        padding: 10px;  
+        min-height: 2px;
+  }
+    h1 {
+        font-size:25vw;
+    }
+}
+
