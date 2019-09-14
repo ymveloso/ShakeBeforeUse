@@ -1,10 +1,10 @@
 
-
-<?php 
-if ( function_exists( 'add_theme_support' ) ) { 
+<?php
+if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
     add_image_size( 'another-size', 600, 400 ); // Not Cropped (additional sizes) size doesn't matter because we're adding "full"
+
  }
 
 function ms_image_editor_default_to_gd( $editors ) {

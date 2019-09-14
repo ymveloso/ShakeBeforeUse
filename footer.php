@@ -1,11 +1,11 @@
+</div>
 
-  </div>
-<br> <br>
+<div class="container-fluid mt-5">
+<?php get_sidebar(); ?>
 
- <?php get_sidebar(); ?>
-
+<?php wp_footer(); ?>
 
 </div>
-<?php wp_footer(); ?> 
+
 </body>
 </html>
