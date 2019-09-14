@@ -1,10 +1,9 @@
-# joana
+# Shake Before Use
 
-Custom Wordpress Theme
+Custom Wordpress Theme using bootstrap
 
 * [Wordpress](http://www.wordpress.org) - CMS
 
 ## Authors
 
-* **Yara** - *Initial work* 
-
+* **Yara** - *Webdesign / Development*
